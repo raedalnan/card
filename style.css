@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG : hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: outfit;
+    background-color: var(--main-BG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+}
+.container{
+    margin-top: 15vh;
+    width: 25vw;
+    height: 78vh;
+    background-color: var(--card-BG);
+    border-radius: 1rem;
+}
+.upper{
+    background-color: var(--Soft-blue);
+    height: 25%;
+    border-radius: 1rem 1rem 0 0;
+    position: relative;
+}
+.upper img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -75px;
+    left: 110px;
+    border-radius: 50%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 1rem 0 1rem ;
+    margin-top: 100px;
+}
+.title{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+.title h2{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.8rem;
+}
+.content p{
+    /* text-align: center; */
+    color: var(--Soft-blue);
+    margin-bottom: 2rem;
+}
+.content a{
+    text-decoration: none;
+    color: var(--White);
+}
+i{
+    margin-right: 10px;
+}
+a:hover{
+    color: var(--Cyan);
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 90%;
+        height: 70vh;
+    }
+}
