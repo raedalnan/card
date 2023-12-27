@@ -26,33 +26,38 @@ body{
     width: 25vw;
     height: 78vh;
     background-color: var(--card-BG);
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 .upper{
-    background-color: var(--Soft-blue);
+    /* background-color: var(--Soft-blue); */
+    background-image: url("bg.jpg");
+    background-size: cover ;
+    filter: drop-shadow(4px 4px 6px #101427);
     height: 25%;
-    border-radius: 1rem 1rem 0 0;
     position: relative;
+    border-radius: .5rem 0.5rem 4rem 4rem ;
 }
 .upper img{
     width: 150px;
     height: 150px;
     position: absolute;
-    bottom: -75px;
-    left: 110px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 50%;
 }
 .content{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     padding: 0 1rem 0 1rem ;
     margin-top: 100px;
 }
 .title{
     width: 100%;
     margin-bottom: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .title h2{
     display: flex;
@@ -63,7 +68,7 @@ body{
 .content p{
     /* text-align: center; */
     color: var(--Soft-blue);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .content a{
     text-decoration: none;
@@ -75,13 +80,33 @@ i{
 a:hover{
     color: var(--Cyan);
 }
-
+.btn{
+    background-color: var(--line);
+    width: 60%;
+    height: 2.5rem;
+    /* padding: 5px; */
+    padding-top: 2px;
+    border-radius: .7rem;
+    text-align: center;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+a{
+    margin-bottom: 10px;
+}
 @media only screen and (max-width: 600px) {
     .container{
-        width: 90%;
-        height: 70vh;
+        width: 95%;
+        min-height: 80vh;
     }
-    a{
-        margin-bottom: 10px;
-    }
+    
 }
+/* @media only screen and (max-width: 1000px  ) {
+    .container{
+        width: 70%;
+        height: 70vh;
+        overflow-y: visible;
+    }
+    
+} */
