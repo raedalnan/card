@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 15px;
+    
     font-family: outfit;
     background-color: var(--main-BG);
     display: flex;
@@ -30,7 +30,7 @@ body{
 }
 .upper{
     /* background-color: var(--Soft-blue); */
-    background-image: url("bg.jpg");
+    background-image: url("bg.jpeg");
     background-size: cover ;
     filter: drop-shadow(4px 4px 6px #101427);
     height: 25%;
