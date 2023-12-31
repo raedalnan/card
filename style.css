@@ -52,7 +52,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding: 0 1rem 0 1rem ;
     margin-top: 100px;
 }
@@ -66,6 +66,7 @@ body{
     justify-content: center;
     border-bottom: 1px solid var(--line);
     font-size: 1.8rem;
+    padding-bottom: 10px;
 }
 .content p{
     /* text-align: center; */
@@ -85,10 +86,8 @@ a:hover{
 .btn{
     background-color: var(--line);
     width: 60%;
-    height: 2.5rem;
-    /* padding: 5px; */
-    padding-top: 2px;
-    border-radius: .7rem;
+    height: 40px;
+    border-radius: 10px;
     text-align: center;
 }
 .btn:hover{
