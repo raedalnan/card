@@ -89,6 +89,9 @@ a:hover{
     height: 40px;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn:hover{
     opacity: 0.8;
